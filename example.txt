@@ -1,0 +1,14 @@
+class BankAccount:
+
+    def __init__(self):
+        self.withdrawals = 0
+        self.replenishment = 0
+        self.account = 0
+  
+    def replenish(self):
+        self.account += self.replenishment
+
+my_account = BankAccount()
+my_account.replenishment = 10
+my_account.replenish()
+print(my_account.account)
